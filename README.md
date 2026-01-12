@@ -1,2 +1,9 @@
 # Rugby-stats-app
-This repository contains my third-year project completed as part of my Computer Science degree at Dublin City University.
+This repository contains my third-year project completed by myself and my project partner as part of my Computer Science degree at Dublin City University.
+
+# About this project
+The goal of this project was to create an app where you can submit stats from an ongoing rugby game. Using the app and the cloud the other user who is not present at the match can get live updates of statistics such as how many times, where on the pitch and how the team has lost possession aswell as other statistics like tackles, line breaks and turnovers.
+
+This project is made up of two different components: the Android application, which is used to record events that occur during a match, and a web application where users can visualise the data being collected in real-time through graphics and charts. The app supports the recording of various events such as turnovers, lineouts, and knock-ons, along with the location on the pitch, divided into eight different quadrants, where the event occurred and the player number associated with the event. The data that is collected is stored in a Firebase real-time database, ensuring synchronization of the data and it being accessible across both devices. The app uses Firebase Authentication for user authentication, which provides security and data protection for users. The system integrates Android mobile components, Firebase services, SQLite for offline local storage, and a Django-developed web interface for data visualisation.
+
+The Django web application forms the second component of the system by retrieving and processing rugby match data from Firebase and rendering it in various dashboards. The Django app handles user sessions (through Firebase Authentication tokens) and displays real-time statistics via Chart.js charts. By keeping the data in Firebase’s Realtime Database, both the Android application and the Django web application stay synchronized, ensuring coaches and analysts can immediately see updates in a more detailed view on desktops or laptops.
