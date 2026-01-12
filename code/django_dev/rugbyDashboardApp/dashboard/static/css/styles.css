@@ -1,0 +1,68 @@
+body {
+    padding-top: 56px; /* Ensures main content doesn't hide behind the fixed navbar */
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 56px; /* Aligns with the bottom of the navbar */
+    left: 0;
+    width: 250px;
+    height: calc(100vh - 56px); /* Adjusted height to account for navbar */
+    background-color: #f8f9fa;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hides sidebar by shifting it off-screen */
+.sidebar.collapsed {
+    transform: translateX(-100%);
+}
+
+/* Style for the sidebar nav links */
+.sidebar .nav-link {
+    padding: 0.75rem 1rem;
+    margin: 0;
+}
+
+/* Sidebar link hover effect */
+.sidebar .nav-link:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+}
+
+/* Active sidebar link styling */
+.sidebar .nav-link.active {
+    background-color: #adb5bd;
+    color: #fff;
+}
+
+/* Adjust main content margin to account for sidebar on larger screens */
+.main-content {
+    margin-left: 0;
+    transition: margin-left 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+/* On larger screens, ensures the sidebar is always visible */
+@media (min-width: 992px) {
+    .sidebar {
+        transform: none !important;
+    }
+    
+    .main-content {
+        margin-left: 250px; /* Ensures main content is not overlapped */
+    }
+}
+
+/* On smaller screens, ensures the sidebar is above the main content */
+@media (max-width: 991.98px) {
+    .sidebar {
+        position: fixed;
+        z-index: 1050; /* increase the z-index */
+    }
+}  

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- scrollview -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolour" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <!-- event buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <Button
+            android:id="@+id/positiveTurnoverButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Positive Turnover"
+            android:textColor="@color/white"
+            android:background="@drawable/actionbutton"
+            android:textAlignment="center"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/negativeTurnoverButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Negative Turnover"
+            android:textColor="@color/white"
+            android:background="@drawable/actionbutton"
+            android:textAlignment="center"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/lineoutLossButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lineout Loss"
+            android:textColor="@color/white"
+            android:background="@drawable/actionbutton"
+            android:textAlignment="center"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/lineoutWinButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lineout Win"
+            android:textColor="@color/white"
+            android:background="@drawable/actionbutton"
+            android:textAlignment="center"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/knockOnButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Knock-On"
+            android:textColor="@color/white"
+            android:background="@drawable/actionbutton"
+            android:textAlignment="center"
+            android:layout_marginTop="8dp" />
+
+
+        <TextView
+            android:id="@+id/directionOfAttack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opponents try line/direction of attack"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="0dp"/>
+
+        <!-- pitch location selection -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <!-- First row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/buttonQ1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Q1"
+                    android:background="@drawable/actionbutton"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp" />
+
+                <Button
+                    android:id="@+id/buttonQ2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Q2"
+                    android:background="@drawable/actionbutton"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp" />
+            </LinearLayout>
+
+            <!-- Second row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/buttonQ3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Q3"
+                    android:background="@drawable/actionbutton"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp" />
+
+                <Button
+                    android:id="@+id/buttonQ4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Q4"
+                    android:background="@drawable/actionbutton"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp" />
+            </LinearLayout>
+
+            <!-- Third row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/buttonQ5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Q5"
+                    android:background="@drawable/actionbutton"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp" />
+
+                <Button
+                    android:id="@+id/buttonQ6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Q6"
+                    android:background="@drawable/actionbutton"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp" />
+            </LinearLayout>
+
+            <!-- Fourth row  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/buttonQ7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Q7"
+                    android:background="@drawable/actionbutton"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp" />
+
+                <Button
+                    android:id="@+id/buttonQ8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Q8"
+                    android:background="@drawable/actionbutton"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- player number -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/instructionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Player Number:"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/playerNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Player Number"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/finishButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Finish"
+                android:textColor="@color/white"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/actionbutton"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

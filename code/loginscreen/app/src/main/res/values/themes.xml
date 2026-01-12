@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- nulling material3 to stop overriding design of buttons -->
+    <style name="Base.Theme.Loginscreen" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:buttonStyle">@null</item>
+        <item name="android:buttonTint">@null</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:tint">@null</item>
+        <item name="android:colorButtonNormal">@android:color/transparent</item>
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryVariant">@android:color/transparent</item>
+        <item name="colorOnPrimary">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.Loginscreen" parent="Base.Theme.Loginscreen" />
+
+    <style name="NoTintButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:background">@drawable/actionbutton</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:buttonTint">@null</item>
+        <item name="android:tint">@null</item>
+    </style>
+
+</resources>
+
+
+

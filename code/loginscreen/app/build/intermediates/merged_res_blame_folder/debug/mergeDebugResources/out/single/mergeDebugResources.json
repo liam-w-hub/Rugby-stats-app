@@ -1,0 +1,278 @@
+[
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_fragment_second4.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_second4.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_activity_create_match.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/activity_create_match.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_content_create_match.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/content_create_match.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/navigation_nav_graph.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_item_match.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/item_match.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_fragment_first7.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_first7.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.loginscreen.app-main-56:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_fragment_first4.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_first4.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_content_player_input.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/content_player_input.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/navigation_nav_graph5.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/navigation/nav_graph5.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.loginscreen.app-main-56:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/navigation_nav_graph8.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/navigation/nav_graph8.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_fragment_second8.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_second8.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/drawable_menubackground.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/drawable/menubackground.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.loginscreen.app-main-56:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_fragment_second7.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_second7.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/drawable_button.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/drawable/button.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/navigation_nav_graph7.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/navigation/nav_graph7.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_activity_match_actions.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/activity_match_actions.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_stat.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/stat.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_content_main2.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/content_main2.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_activity_previous_matches.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/activity_previous_matches.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_fragment_first3.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_first3.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.loginscreen.app-main-56:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/navigation_nav_graph4.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/navigation/nav_graph4.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/drawable_textbackground.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/drawable/textbackground.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_fragment_first.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_first.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/menu_menu_main.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/menu/menu_main.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/xml_backup_rules.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_content_previous_matches.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/content_previous_matches.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_fragment_first9.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_first9.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_fragment_second.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_second.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/drawable_menubuttons.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/drawable/menubuttons.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_content_rugby_pitch.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/content_rugby_pitch.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/navigation_nav_graph6.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/navigation/nav_graph6.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_fragment_second6.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_second6.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_fragment_first2.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_first2.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_activity_view_statistics.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/activity_view_statistics.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/drawable_buttonborder.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/drawable/buttonborder.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_fragment_first6.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_first6.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/navigation_nav_graph3.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/navigation/nav_graph3.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.loginscreen.app-main-56:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.loginscreen.app-main-56:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_fragment_second3.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_second3.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.loginscreen.app-main-56:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_fragment_first8.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_first8.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_fragment_second5.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_second5.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/drawable_backgroundcolour.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/drawable/backgroundcolour.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.loginscreen.app-main-56:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/navigation_nav_graph2.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/navigation/nav_graph2.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_activity_menu.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/activity_menu.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_content_main.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/content_main.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_content_register.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/content_register.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_fragment_second2.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_second2.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_content_match_actions.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/content_match_actions.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/drawable_actionbutton.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/drawable/actionbutton.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.loginscreen.app-main-56:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.loginscreen.app-main-56:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_content_view_statistics.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/content_view_statistics.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_fragment_first5.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_first5.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_fragment_second9.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_second9.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_activity_register.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/layout_activity_main.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-debug-54:/navigation_nav_graph9.xml.flat",
+        "source": "com.example.loginscreen.app-main-56:/navigation/nav_graph9.xml"
+    }
+]

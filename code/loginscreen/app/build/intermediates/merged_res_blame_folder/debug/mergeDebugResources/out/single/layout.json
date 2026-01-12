@@ -1,0 +1,146 @@
+[
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/activity_view_statistics.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/activity_view_statistics.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/fragment_first6.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_first6.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/fragment_first9.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_first9.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/fragment_second.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_second.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/fragment_second9.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_second9.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/activity_menu.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/activity_menu.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/content_previous_matches.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/content_previous_matches.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/stat.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/stat.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/fragment_first8.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_first8.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/content_rugby_pitch.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/content_rugby_pitch.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/fragment_first5.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_first5.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/content_match_actions.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/content_match_actions.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/fragment_second6.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_second6.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/fragment_second3.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_second3.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/item_match.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/item_match.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/content_player_input.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/content_player_input.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/fragment_first.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_first.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/activity_register.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/activity_create_match.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/activity_create_match.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/fragment_second4.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_second4.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/fragment_first4.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_first4.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/content_register.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/content_register.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/fragment_first2.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_first2.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/fragment_second2.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_second2.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/fragment_second7.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_second7.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/fragment_first7.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_first7.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/activity_main.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/fragment_second8.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_second8.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/content_view_statistics.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/content_view_statistics.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/activity_previous_matches.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/activity_previous_matches.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/content_main.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/content_main.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/fragment_second5.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_second5.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/content_main2.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/content_main2.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/content_create_match.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/content_create_match.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/activity_match_actions.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/activity_match_actions.xml"
+    },
+    {
+        "merged": "com.example.loginscreen.app-mergeDebugResources-53:/layout/fragment_first3.xml",
+        "source": "com.example.loginscreen.app-main-56:/layout/fragment_first3.xml"
+    }
+]

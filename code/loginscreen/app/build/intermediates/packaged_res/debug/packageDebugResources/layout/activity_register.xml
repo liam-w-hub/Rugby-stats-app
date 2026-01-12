@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/menubackground">
+
+    <EditText
+        android:id="@+id/registerEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="150dp"/>
+
+    <EditText
+        android:id="@+id/registerPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/registerPasswordEditTextAgain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password Again"
+        android:inputType="textPassword"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/blue"
+        android:background="@drawable/button" />
+
+
+    <TextView
+        android:id="@+id/registerPasswordTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*Passwords must include both letters and numbers, and be over 6 characters long"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

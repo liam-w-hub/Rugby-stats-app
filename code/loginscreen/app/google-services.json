@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "976199094577",
+    "project_id": "rugby-stats-40be8",
+    "storage_bucket": "rugby-stats-40be8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976199094577:android:b0e7af7b412ddfb3782010",
+        "android_client_info": {
+          "package_name": "com.example.loginscreen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpZIcnisGQqboc55qml7RXlEALLl4ocyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

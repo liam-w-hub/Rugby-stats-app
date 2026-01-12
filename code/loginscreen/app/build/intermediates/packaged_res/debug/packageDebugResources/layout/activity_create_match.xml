@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menubackground"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Team Name -->
+    <EditText
+        android:id="@+id/teamNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:hint="Team Name"
+        android:inputType="text" />
+
+    <!-- Opponent Name -->
+    <EditText
+        android:id="@+id/opponentNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Opponent Name"
+        android:inputType="text" />
+
+    <!-- Create Match Button -->
+    <Button
+        android:id="@+id/createMatchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button"
+        android:text="Start match"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+

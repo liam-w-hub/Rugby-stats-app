@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    Dashboard
+{% endblock %}
+
+{% block content %}
+    <div class="container">   
+        <h1 class="text-center">Event Trends over Time</h1>
+        <canvas id="trendsChart"></canvas>
+    </div>   
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Parsing team trends data, from server to a JavaScript object
+    const teamTrends = JSON.parse('{{ team_trends|safe }}');
+
+    // Sort the list of match dates
+    const dates = Object.keys(teamTrends).sort();
+
+    // Define all event types across all match dates.
+    const eventTypes = ["Knock-On", "Positive Turnover", "Negative Turnover", "Lineout Win", "Lineout Loss"];
+
+    // Create dictionary for each event type to be plotted on the chart
+    const chartData = {};
+    eventTypes.forEach(event => {
+        chartData[event] = dates.map(date => teamTrends[date][event] || 0); // Initialise 0 for unpopulated events
+    });
+
+    const colourMap = {
+        "Knock-On": "rgba(34, 139, 34, 0.8)",    // Green
+        "Lineout Win": "rgba(128, 0, 128, 0.8)",  // Purple
+        "Negative Turnover": "rgba(255, 69, 0, 0.8)",   // Red-Orange
+        "Positive Turnover": "rgba(30, 144, 255, 0.8)", // Blue
+        "Lineout Loss": "rgba(255, 165, 0, 0.8)"   // Orange
+    };
+
+    // Assigns colours to datasets explicitly
+    const datasets = eventTypes.map(eventType => ({
+        label: eventType,
+        data: chartData[eventType],
+        fill: false,
+        borderColor: colourMap[eventType],
+        tension: 0.1
+    }));
+
+    // All time Team Performance line chart initialisation
+    const ctx = document.getElementById("trendsChart").getContext("2d");
+    const trendsChart = new Chart(ctx, {
+        type: "line",
+        data: {
+            labels: dates,
+            datasets: datasets
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        stepSize: 1
+                    },
+                    title: {
+                        display: true,
+                        text: "Event Counts"    // Y-axis title
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: "Match Days"      // X-axis title
+                    }
+                }
+            },
+            plugins: {
+                title: {
+                    display: true,
+                }
+            }
+        }
+    });
+  </script>
+{% endblock %}

@@ -1,0 +1,5 @@
+com.example.loginscreen.test.app-core-1.6.1-0 C:\Users\liamw\.gradle\caches\8.10.2\transforms\17b23f08b9dc2e82a72be5c4fa2ab75e\transformed\core-1.6.1\res
+com.example.loginscreen.test.app-androidTest-1 C:\Users\liamw\2025-csc1049-rugby-stats-app\code\loginscreen\app\build\generated\res\resValues\androidTest\debug
+com.example.loginscreen.test.app-mergeDebugAndroidTestResources-2 C:\Users\liamw\2025-csc1049-rugby-stats-app\code\loginscreen\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.loginscreen.test.app-mergeDebugAndroidTestResources-3 C:\Users\liamw\2025-csc1049-rugby-stats-app\code\loginscreen\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.loginscreen.test.app-debugAndroidTest-4 C:\Users\liamw\2025-csc1049-rugby-stats-app\code\loginscreen\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

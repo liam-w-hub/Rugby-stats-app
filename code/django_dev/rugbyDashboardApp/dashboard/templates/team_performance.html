@@ -1,0 +1,241 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    Team Performance
+{% endblock %}
+
+{% block content %}
+    {% if players_performance %} 
+    <div class="container">
+        <div class="my-4">
+            <h1 class="fw-bold">
+              Match Performance - {{ match.teamName }} vs {{ match.opponentName }}
+            </h1>
+            <h3 class="text-muted">Date: {{ match.date }}</h3>
+        </div>
+
+        <!-- Filter form to select Time window and optional Player number and Pitch Location -->
+        <form id="filterForm" class="row g-3 align-items-end">
+            <!-- Time window dropdown menu -->
+            <div class="col-auto">
+                <label for="minutes" class="form-label">Select Time Window:</label>
+                <select id="minutes" name="minutes" class="form-select">
+                    <option value="all">All Time</option>
+                    <option value="5">Last 5 minutes</option>
+                    <option value="10">Last 10 minutes</option>
+                    <option value="15">Last 15 minutes</option>
+                </select>
+            </div>
+            
+            <!-- Player Number search bar -->
+            <div class="col-auto">
+                <label for="playerNumber" class="form-label">Player Number (optional):</label>
+                <input type="number" id="playerNumber" name="playerNumber" placeholder="All Players" class="form-control">
+            </div>
+            
+            <!-- Pitch Location dropdown menu -->
+            <div class="col-auto">
+                <label for="location" class="form-label">Select Quadrant Location (optional):</label>
+                <select id="location" name="location" class="form-select">
+                    <option value="">All Locations</option>
+                    <option value="q1">q1</option>
+                    <option value="q2">q2</option>
+                    <option value="q3">q3</option>
+                    <option value="q4">q4</option>
+                    <option value="q5">q5</option>
+                    <option value="q6">q6</option>
+                    <option value="q7">q7</option>
+                    <option value="q8">q8</option>
+                </select>
+            </div>
+            
+            <!-- Filter and Reset buttons -->
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary me-2">Filter</button>
+                <button type="button" id="resetButton" class="btn btn-secondary">Reset</button>
+            </div>
+        </form>
+        
+        <div class="pt-5">
+            <h2 class="text-center pb-5">Count of Events for Each Player</h2>
+            <canvas id="playerPerformanceChart"></canvas>
+        </div>
+
+        <div class="pt-5">
+            <h2 class="text-center pb-5">Event Distribution by Quadrant Location</h2>
+            <canvas id="locationDoughnutChart"></canvas>
+        </div>
+
+    </div>
+    
+    {% else %}
+        <p>No stats found</p> <!-- No Player Performance data exists -->
+    {% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Parsing performance data, from server to a JavaScript object
+    const playerPerformanceData = JSON.parse('{{ players_performance|safe }}'); 
+
+    // Defining colours for respective event type bars
+    const eventColours = {
+        "Knock-On": "rgba(0, 128, 0, 0.2)",             // green
+        "Positive Turnover": "rgba(0, 0, 255, 0.2)",    // blue
+        "Negative Turnover": "rgba(255, 0, 0, 0.2)",    // red 
+        "Lineout Win": "rgba(128, 0, 128, 0.2)",        // purple
+        "Lineout Loss": "rgba(255, 165, 0, 0.2)"        // orange
+    };
+
+    // Defining colours for respective event type bar borders
+    const eventBorder = {
+        "Knock-On": "rgba(0, 128, 0, 1)",             // green
+        "Positive Turnover": "rgba(0, 0, 255, 1)",    // blue
+        "Negative Turnover": "rgba(255, 0, 0, 1)",    // red 
+        "Lineout Win": "rgba(128, 0, 128, 1)",        // purple
+        "Lineout Loss": "rgba(255, 165, 0, 1)"        // orange
+    };
+
+    const eventTypes = Object.keys(eventColours); // Getting event types from the colours dictionary
+
+    // Extracting labels for the X-axis (Player Numbers)
+    const players = Object.keys(playerPerformanceData);
+
+    // Preparing Player Events datasets for each event type to be plotted on the chart
+    const datasets = eventTypes.map(eventType => ({
+        label: eventType,
+        data: players.map(player => playerPerformanceData[player][eventType] || 0),    // Initialise 0 for unpopulated events
+        backgroundColor: eventColours[eventType],   // Set background colour for each event type
+        borderColor: eventBorder[eventType],        // Set border colour for each event type
+        borderWidth: 1
+    }));
+
+    // Player events chart initialisation
+    const playerCtx = document.getElementById("playerPerformanceChart").getContext("2d");
+    const playerPerformanceChart = new Chart(playerCtx, {
+        type: "bar",
+        data: {
+            labels: players,
+            datasets: datasets
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true,  // Ensure the y-axis starts at zero
+                    ticks: {
+                        stepSize: 1
+                    },
+                    title: {
+                        display: true,
+                        text: "Event Count"     // Y-axis title
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: "Player Numbers"  // X-axis title
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    position: "top",
+                }
+            }
+        }
+    });
+    
+    // Handling form filter submission
+    document.getElementById("filterForm").addEventListener("submit", function(e) {
+        e.preventDefault();     // Prevents default form submission
+        
+        const minutes = document.getElementById("minutes").value;   // Will be "All" if selected
+        const playerNumber = document.getElementById("playerNumber").value || null;  // Player's number or null if not specifiied
+        const location = document.getElementById("location").value || "";  // Pitch location or empty string if not specifiied
+
+        // Fetch filtered data based on the selected criteria
+        fetch(`/filter_performance/{{ match_id }}?minutes=${minutes}&playerNumber=${playerNumber}&location=${location}`)
+            .then(response => response.json())
+            .then(data => {
+                updateChart(data);  // Update chart with the new filtered data
+            });
+    });
+
+    // Reset button function to restore original data and form values
+    document.getElementById("resetButton").addEventListener("click", function() {
+        updateChart(playerPerformanceData);    // Reset chart to original data
+        document.getElementById("filterForm").reset();   // Reset form to default values
+    });
+
+    // Function updating the chart with new data
+    function updateChart(data) {
+        const players = Object.keys(data);
+        const datasets = eventTypes.map(eventType => ({
+            label: eventType,
+            data: players.map(player => data[player][eventType] || 0),
+            backgroundColor: eventColours[eventType],
+            borderColor: eventBorder[eventType],
+            borderWidth: 1
+        }));
+
+        // Update chart data
+        playerPerformanceChart.data.labels = players;
+        playerPerformanceChart.data.datasets = datasets;
+        playerPerformanceChart.update();  // Re-render chart with updated data
+    }
+
+    // Parsing heatmap data from server to JavaScript object
+    const heatmapData = JSON.parse('{{ match_heatmap|safe }}'); 
+   
+    // Defines location names and maps each to their event count
+    const locationNames = ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8"];
+    const locationValues = locationNames.map(location => heatmapData[location] || 0);
+
+    // Defines colours for each slice
+    const locationColours = [
+        "rgba(244, 67, 54, 1)",       // Red
+        "rgba(0, 150, 136, 1)",       // Teal
+        "rgba(255, 235, 59, 1)",      // Yellow
+        "rgba(156, 39, 176, 1)",      // Purple
+        "rgba(33, 150, 243, 1)",      // Blue
+        "rgba(255, 87, 34, 1)",       // Orange
+        "rgba(76, 175, 80, 1)",       // Green
+        "rgba(63, 81, 181, 1)"        // Indigo
+    ];
+
+    // Pitch Heatmap Initialisation
+    const locationCtx = document.getElementById("locationDoughnutChart").getContext("2d");
+    const locationDoughnutChart = new Chart(locationCtx, {
+        type: "doughnut",
+        data: {
+            labels: locationNames,
+            datasets: [{
+                data: locationValues,   
+                backgroundColor: locationColours, // Set background colour for each Pitch location
+                borderColor: "#ffff", // White border on each doughnut segment
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: "top"
+                },
+                tooltip: {
+                    callbacks: {
+                        // Formatted the tooltip label as "X events", where X is the event count
+                        label: ({ formattedValue = 0 }) => `${formattedValue} events` 
+                    }
+                }
+            },
+            aspectRatio: 2, //Reduced Chart aspect ratio
+            cutout: "70%",      // Reduced doughnut chart thickness
+            circumference: 180, // Circumference as semicircle to enhance location visibility
+            rotation: 270,      // Upright view of the Chart
+        }
+    });
+</script>
+{% endblock %}
